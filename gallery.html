@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>photo Gallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/fabicon_AI.png">  
+</head>
+<body id="body2">
+    <header class="gallery-header">
+    <h1>Photo Gallery</h1>
+    <p>発掘された写真を3Dカルーセルで展示しています。<br>（クリックすると拡大表示されます）</p>
+    <a href="main.html" class="back-btn">トップに戻る</a>
+    </header>
+
+    <!-- ズーム用オーバーレイ -->
+    <div class="zoom-overlay" id="zoomOverlay">
+    <img id="zoomImage" class="zoom-image">
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="img/gan.jpg" alt="photo1"  class="hov">
+            <img src="img/gan2.jpg" alt="photo2" class="hov">
+            <img src="img/gan3.jpg" alt="photo3" class="hov">
+            <img src="img/gan4.jpg" alt="photo4" class="hov">
+            <img src="img/gan5.jpg" alt="photo5" class="hov">
+            <img src="img/gan6.jpg" alt="photo6" class="hov">
+            <img src="img/gan7.jpg" alt="photo7" class="hov">
+        </div>
+    </div>
+    <script src="js/deco.js"></script>
+</body>
+</html>
