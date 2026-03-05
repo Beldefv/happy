@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: ;
+    background-image: url(/img/durkforest.jpeg);
+    background-size: cover;
+}
+
+/* 背景を暗くする */
+body.bg-dark {
+  background: #000;
+  transition: background 1.5s ease;
+}
+
+/* 宇宙背景 */
+body.bg-space {
+  background-image: url("../img/cosumo.jpeg");
+  background-size: cover;
+  transition: background-image 1.5s ease;
+}
+
+/* 星を降らせる */
+body.stars::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../img/stars.png");
+  background-repeat: repeat;
+  animation: fall 10s linear infinite;
+  pointer-events: none;
+  z-index: 9999; /* ← これが重要！ */
+}
+
+@keyframes fall {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+/* グリッチ */
+body.glitch h1 {
+  animation: glitch 0.5s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px red; }
+  50% { text-shadow: -2px -2px cyan; }
+  100% { text-shadow: 2px -2px lime; }
+}
+
+header {
+    font-family: fantasy;
+    padding: 20px;
+    color: rgb(134, 15, 15);
+    border-bottom: solid #000;
+}
+
+.about {
+  color: #ffffff;
+}
+
+.mei {
+  /* 縦書き */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.hedi {
+    background-image: url(/img/header.png),url(/img/cosumo.jpeg);
+    background-size: cover, cover;
+    background-repeat: repeat-x, repeat-x;
+    animation: scroll 25s linear infinite;
+    will-change: transform;
+}
+
+.top-footer {
+  background: #02ff8dbe;
+  color: #0b0b0b;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  letter-spacing: 1.5px;
+  background-image: url(/img/futer2.jpeg);
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0;
+  border-top: solid #00bbffbe;
+
+}
+
+.top-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.footer-link a {
+  color: #f5f5f5;
+  margin: 0 25px;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: #ff0000;
+}
+
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0; /*動かす距離*/
+  }
+}
+
+
+
+#header_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: floralwhite;
+    color: #f50404;
+}
+#header_btn2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: floralwhite;
+    color: #f50404;
+}
+.ani-area {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.ani-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); /* ← 透明度調整 */
+    backdrop-filter: blur(3px);   /* ← 背景を少しぼかすと読みやすい */
+    z-index: -1;
+}
+
+
+.ani-area h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}

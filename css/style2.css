@@ -1,0 +1,175 @@
+:root {
+  --bg-main: #fdf7ff;
+  --accent: #ff6fb5;
+  --accent-sub: #6fd6ff;
+  --text-main: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#body3 {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+
+
+/* ヘッダー */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-sub));
+  color: #fff;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.back-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 8px;
+  transition: background .2s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.cycling-hero {
+  position: relative;
+  height: 45vh;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.cycling-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transform: scale(1.05);
+}
+
+.hero-text {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+  color: #fff;
+  max-width: 420px;
+}
+
+.hero-text h2 {
+  font-size: 2.6rem;
+  margin: 0 0 8px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* セクション共通 */
+main section {
+  padding: 40px 8vw;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* ギャラリー */
+.cycling-gallery {
+  text-align: center;
+}
+
+.gallery-frame {
+  max-width: 420px;
+  margin: 0 auto 12px;
+  border-radius: 24px;
+  padding: 10px;
+  background: linear-gradient(135deg, var(--accent-sub), var(--accent));
+}
+
+.gallery-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+.gallery-caption {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#bg-gradient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #ffffff,
+    #ffe4f2,
+    #d8f3ff,
+    #fff7c2
+  );
+  transition: background 0.1s linear;
+}
+
+/* #sakura-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0; 
+  overflow: hidden;
+}
+
+.sakura {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: pink;
+  border-radius: 50% 70% 50% 70%;
+  opacity: 0.8;
+  filter: blur(0.5px);
+}
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+} */
+ #sakura-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.sakura {
+  position: absolute;
+  background: pink;
+  opacity: 0.9;
+  filter: blur(0.5px);
+  border-radius: 50%;
+  will-change: transform;
+}
