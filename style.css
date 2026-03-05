@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    font-family: ;
+    background-image: url(/img/durkforest.jpeg);
+    background-size: cover;
+}
+
+header {
+    font-family: fantasy;
+    padding: 20px;
+    color: rgb(134, 15, 15);
+    border-bottom: solid #000;
+}
+
+.about {
+  color: #ffffff;
+}
+
+.mei {
+  /* 縦書き */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.hedi {
+    background-image: url(/img/header.png),url(/img/cosumo.jpeg);
+    background-size: cover, cover;
+    background-repeat: repeat-x, repeat-x;
+    animation: scroll 25s linear infinite;
+    will-change: transform;
+}
+
+.top-footer {
+  background: #02ff8dbe;
+  color: #0b0b0b;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  letter-spacing: 1.5px;
+  background-image: url(/img/futer2.jpeg);
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0;
+  border-top: solid #00bbffbe;
+}
+
+.footer-link a {
+  color: #f5f5f5;
+  margin: 0 25px;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: #ff0000;
+}
+
+/* 規約ページ制御 */
+
+.kiyaku {
+  background-image: url(/img/kiyaku.jpeg);
+  background-size: cover;
+  font-family: 'Shippori Mincho', serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+.rule {
+   max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.rule-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+  color: #8b0000;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.rule-h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  color: #cfcfcf;
+  border-left: 4px solid #8b0000;
+  padding-left: 10px;
+}
+
+.rule-p {
+  font-size: 16px;
+}
+
+.rule-ul {
+  padding-left: 20px;
+}
+/* 背景を横に流すアニメーション*/
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0; /*動かす距離*/
+  }
+}
+
+
+
+#header_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: floralwhite;
+    color: #f50404;
+}
+#header_btn2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: floralwhite;
+    color: #f50404;
+}
+
+/*メインの内容*/
+#body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* ヘッダー */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 自己紹介 */
+.intro {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro h2 {
+  border-left: 5px solid #333;
+  padding-left: 10px;
+}
+
+/* 趣味カード一覧 */
+.hobby-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.hobby-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-card img {
+  width: 100%;
+  height: auto;
+}
+
+.hobby-card h3 {
+  margin: 15px;
+}
+
+.hobby-card p {
+  margin: 0 15px 20px;
+  line-height: 1.6;
+}
+
+/*ギャラリー*/
+
+#body2 {
+  margin: 0;
+  background-image: url(/img/bakku.jpg);
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*額縁*/
+#body2::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  padding: 20px;
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  z-index: 5;
+}
+
+.hov:hover {
+  transform: translateY(-50px);
+  background: rgba(255,255,255,0.4);
+}
+
+
+/* ヘッダー */
+.gallery-header {
+  padding: 30px 20px;
+  background-color: #cfcfcf;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #111;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* カルーセル本体 */
+.carousel-container {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  perspective: 1200px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 20s linear infinite;
+  cursor: pointer;
+  margin: 0 auto;
+  transform-origin: center center;
+}
+
+.carousel img {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  margin-left: -150px;  /* widthの半分 */
+  margin-top: -100px;   /* heightの半分 */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* 回転アニメーション */
+@keyframes rotate {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+
+.carousel.paused {
+  animation-play-state: paused;
+}
+
+/* ズーム用オーバーレイ */
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* ズーム画像 */
+.zoom-image {
+  width: 70%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.6); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/*趣味*/
+:root {
+  --bg-main: #fdf7ff;
+  --accent: #ff6fb5;
+  --accent-sub: #6fd6ff;
+  --text-main: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#body3 {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+
+
+/* ヘッダー */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-sub));
+  color: #fff;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.back-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 8px;
+  transition: background .2s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.cycling-hero {
+  position: relative;
+  height: 45vh;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.cycling-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transform: scale(1.05);
+}
+
+.hero-text {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+  color: #fff;
+  max-width: 420px;
+}
+
+.hero-text h2 {
+  font-size: 2.6rem;
+  margin: 0 0 8px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* セクション共通 */
+main section {
+  padding: 40px 8vw;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* ギャラリー */
+.cycling-gallery {
+  text-align: center;
+}
+
+.gallery-frame {
+  max-width: 420px;
+  margin: 0 auto 12px;
+  border-radius: 24px;
+  padding: 10px;
+  background: linear-gradient(135deg, var(--accent-sub), var(--accent));
+}
+
+.gallery-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+.gallery-caption {
+  font-size: 0.9rem;
+  color: #555;
+}
+
